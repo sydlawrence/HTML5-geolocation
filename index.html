@@ -19,26 +19,17 @@
 	pageTracker._trackPageview();
 	} catch(err) {}</script>
 		
-	<!-- load demo js -->
-	<script src="geolocation.js"></script>
+	
 
 </head>
 <body>
 	<header>This is a demo of the HTML5 navigator.geolocation API in action</header>
 	
-	<div style="padding:5px;">
-		<p>
-			To get your location click here:
-			
-			<!-- use a button so that it is accessible -->
-			<button id="location_btn">Get my location</button>
-		</p>
-		
-		<!-- used to display the results -->
-		<p id="location">
-		
-		</p>
-	</div>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <article>
+      <p>Finding your location: <span id="status">checking...</span></p>
+    </article>
+    
 	<hr/>
 	
 	<footer>
@@ -59,6 +50,8 @@
 		<p>This demo was written by <a href="http://twitter.com/sydlawrence">@sydlawrence</a> from <a href="http://www.marmaladeontoast.co.uk">Marmalade on Toast</a>, for <a href="http://js-html5.com">js-html5.com</a></p>
 	</footer>
 	
+	<!-- load demo js -->
+	<script src="geolocation.js"></script>
 
 </body>
 </html>
