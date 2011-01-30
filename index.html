@@ -18,10 +18,7 @@
 	var pageTracker = _gat._getTracker("UA-6435088-13");
 	pageTracker._trackPageview();
 	} catch(err) {}</script>
-	
-	<!-- load jquery from google cdn -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-	
+		
 	<!-- load demo js -->
 	<script src="geolocation.js"></script>
 
@@ -32,8 +29,12 @@
 	<div style="padding:5px;">
 		<p>
 			To get your location click here:
+			
+			<!-- use a button so that it is accessible -->
 			<button id="location_btn">Get my location</button>
 		</p>
+		
+		<!-- used to display the results -->
 		<p id="location">
 		
 		</p>
